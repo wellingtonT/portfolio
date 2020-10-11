@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellington Thalyson</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fixedStyles.css" />
+</head>
+    <body>
+        <header>
+            <div class="bannerTop">
+                <div class="menu" id="menu">
+                    <button class="sideMenuButton" onclick="openSideMenu()"><img src="./assets/images/side-menu.png"></button>
+                    <ul class="menuList">
+                        <li><a href="/" class="selected"> Início </a></li>
+                        <li><a href="/"> Sobre mim </a></li>
+                        <li><a href="/"> Habilidades </a></li>
+                        <li><a href="/"> Projetos </a></li>
+                        <li><a href="/"> Contato </a></li>
+                    </ul>
+                </div>
+
+                <div class="userInformation">
+                    <p>Wellington Thalyson</p>
+                    <img src="./assets/images/anime.jpg" alt="Wellington">
+                </div>
+            </div>
+
+            <div class="bannerLeft" id="bannerLeft">
+                <button class="closeButton" onclick="closeSideMenu()"><img src="./assets/images/close.png"></button>
+                <ul class="bannerLeftMenu">
+                    <li><a href="/" class="selected"> Início </a></li>
+                    <li><a href="/"> Sobre mim </a></li>
+                    <li><a href="/"> Habilidades </a></li>
+                    <li><a href="/"> Projetos </a></li>
+                    <li><a href="/"> Contato </a></li>
+                </ul>
+                <div class="socialIcons">
+                    <img src="./assets/images/linkedin.png" alt="Linkedin">
+                    <img src="./assets/images/github.png" alt="github">
+                    <img src="./assets/images/facebook.png" alt="facebook">
+                </div>
+            </div>
+        </header>
+    </body>
+
+    <script>
+        openSideMenu = () => {
+            document.getElementById('menu').classList.add('open');
+            document.getElementById('bannerLeft').classList.add('open');
+        }
+
+        closeSideMenu = () => {
+            document.getElementById('menu').classList.remove('open');
+            document.getElementById('bannerLeft').classList.remove('open');
+        }
+    </script>
+</html>

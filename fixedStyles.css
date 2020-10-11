@@ -1,0 +1,316 @@
+@font-face {
+    font-family: ptserif;
+    src: url(./assets/fonts/PTSerif.ttf);
+}
+
+@media only screen and (min-width: 1440px) {
+    .menu .menuList {
+        display: inline-flex;
+    }
+
+    .menu .sideMenuButton {
+        display: none;
+    }
+
+    .userInformation p {
+        font-size: 21px;
+    }
+
+    .userInformation img {
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (min-width: 1240px) and (max-width: 1439px) {
+    .menu .menuList {
+        display: inline-flex;
+    }
+
+    .menu .sideMenuButton {
+        display: none;
+    }
+
+    .userInformation p {
+        font-size: 21px;
+    }
+
+    .userInformation img {
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (min-width: 1060px) and (max-width: 1239px) {
+    .menu .menuList {
+        display: inline-flex;
+    }
+
+    .menu .sideMenuButton {
+        display: none;
+    }
+
+    .userInformation p {
+        font-size: 21px;
+    }
+
+    .userInformation img {
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (min-width: 840px) and (max-width: 1059px){
+    .menu .menuList {
+        display: none;
+    }
+
+    .menu .sideMenuButton {
+        display: inline-flex;
+    }
+
+    .userInformation p {
+        font-size: 21px;
+    }
+
+    .userInformation img {
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (min-width: 640px) and (max-width: 839px) {
+    .menu .menuList {
+        display: none;
+    }
+
+    .menu .sideMenuButton {
+        display: inline-flex;
+    }
+
+    .userInformation p {
+        font-size: 21px;
+    }
+
+    .userInformation img {
+        height: 50px;
+        width: 50px;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 639px) {
+    .menu .menuList {
+        display: none;
+    }
+
+    .menu .sideMenuButton {
+        display: inline-flex;
+    }
+
+    .userInformation p {
+        font-size: 19px;
+    }
+
+    .userInformation img {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+/* ANIMATIONS */
+
+@keyframes openSideMenu {
+    from { width: 60px; }
+    to { width: 240px; }
+}
+
+@keyframes closeSideMenu {
+    from { width: 240px; }
+    to { width: 60px; }
+}
+
+@keyframes entranceAnimation {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes exitAnimation {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(96, 108, 221, 1), rgba(56, 63, 117, 0.91));
+}
+
+.bannerTop {
+    height: 90px;
+    width: 100vw;
+    position: absolute;
+    top: 30px;
+    background-image: linear-gradient(to right, rgba(54, 64, 152, 0.73), rgba(27, 33, 87, 0.75));
+}
+
+.bannerLeft {
+    height: 100vh;
+    width: 60px;
+    animation-name: closeSideMenu;
+    animation-duration: 1s;
+    position: absolute;
+    background-image: linear-gradient(rgba(54, 64, 152, 0.73), rgba(27, 33, 87, 0.75));
+}
+
+/* TOP MENU */
+
+.menu {
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+    display: inline-flex;
+}
+
+.menuList {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.menuList li {
+    display: inline-block;
+}
+
+.menuList li a {
+    font-size: 21px;
+    font-family: ptserif;
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.menu li a.selected {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.menu .sideMenuButton {
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    margin-left: 8px;
+    animation-name: entranceAnimation;
+    animation-duration: 1.5s;
+}
+
+.menu.open .sideMenuButton {
+    display: none;
+}
+
+.userInformation {
+    display: inline-flex;
+    float: right;
+    margin-right: 20px;
+    height: 100%;
+    align-items: center;
+    justify-content: left;
+}
+
+.userInformation p {
+    font-family: ptserif;
+    color: white;
+}
+
+.userInformation img {
+    border-radius: 50px;
+    margin-left: 15px;
+}
+
+/* BANNER LEFT STYLE */
+.bannerLeft.open {
+    animation-name: openSideMenu;
+    animation-duration: 1s;
+    width: 240px;
+}
+
+.closeButton {
+    background-color: transparent;
+    border: none;
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+.closeButton img {
+    width: 20px;
+    height: 20px;
+}
+
+.bannerLeft.open .closeButton {
+    animation-name: entranceAnimation;
+    animation-duration: 1.5s;
+    display: inline-flex;
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.bannerLeftMenu {
+    display: none;
+    animation-name: exitAnimation;
+    animation-duration: 1.5s;
+}
+
+.bannerLeft.open .bannerLeftMenu {
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin-top: 135px;
+    animation-name: entranceAnimation;
+    animation-duration: 1.5s;
+}
+
+.bannerLeft.open .bannerLeftMenu li {
+    margin-top: 25px;
+}
+
+.bannerLeft.open .bannerLeftMenu li a {
+    font-size: 21px;
+    font-family: ptserif;
+    margin-right: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.bannerLeft.open .bannerLeftMenu li a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.bannerLeft.open .bannerLeftMenu li a.selected {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.bannerLeft .socialIcons {
+    display: block;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.bannerLeft.open .socialIcons {
+    margin-top: 25px;
+}
+
+.bannerLeft .socialIcons img {
+    margin-top: 25px;
+    text-align: center;
+}
