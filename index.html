@@ -44,7 +44,7 @@
             </div>
         </header>
 
-        <section>
+        <section id="initialContainer" class="show">
             <div class="mainContainer">
                 <div class="titleContainer">
                     <h1>Wellington Thalyson</h1>
@@ -56,6 +56,7 @@
                 <div class="textContainer">
                     <p>- Bacharel em Sistemas de Informação pela Universidade do Vale do Sapucaí.</p>
                     <p>- Atuei com desenvolvimento web pela INATEL.</p>
+                    <p>- Atuei com desenvolvimento web pelo Hospital das Clínicas Samuel Libânio.</p>
                     <p>- Atuei com desenvolvimento web pelo IF - Sul de Minas.</p>
                     <p>- Atuei com desenvolvimento web e mobile para outros cursos da instituição.</p>
                 </div>
@@ -63,6 +64,72 @@
                     <img src="./assets/images/linkedin-100.png" alt="Linkedin">
                     <img src="./assets/images/github-100.png" alt="github">
                     <img src="./assets/images/facebook-100.png" alt="facebook">
+                </div>
+            </div>
+        </section>
+        <section id="aboutContainer">
+            <div class="mainContainer">
+                <div class="titleContainer">
+                    <h1>Sobre mim</h1>
+                </div>
+                <div class="textContainer aboutTextContainer">
+                    <p>
+                        Nascido em Pouso Alegre, Minas Gerais, comecei a trabalhar com tecnologia em 2018, ao iniciar minha jornada
+                        de desenvolvimento como estagiário. Atuei com várias tecnologias e frameworks até hoje, e sou apaixonado
+                        por novas soluções.
+                    </p>
+                    <p>
+                        Iniciei meus estudos na instituição de ensino UNIVÁS em 2017, com formação prevista para dezembro de
+                        2020. Já no 2º ano, entrei no Instituto Federal do Sul de Minas como estagiário em desenvolvimento web,
+                        no 3º ano, entrei no hospital hospital das clínicas Samuel Libânio como estagiário em desenvolvimento web e,
+                        para finalizar minha formação, entrei como Estagiário em desenvolvimento web no INATEL.
+                    </p>
+                    <p>
+                        Minha maior habilidade é na linguagem JavaScript, onde atuo tanto no front-end quando no back-end.
+                        Tenho experiência em diversos frameworks, como Angular 2 e ReactJS no front e NodeJS para o back.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="skillsContainer">
+            <div class="mainContainer">
+                <div class="titleContainer">
+                    <h1>Habilidades</h1>
+                    <h2>Linguagens e frameworks</h2>
+                </div>
+                <div class="frameworksContainer">
+                    <div class="languages">
+                        <h3>Linguagens</h3>
+                        <div class="containerTechnologies">
+                            <img src="./assets/images/javascript-100.png" alt="Linkedin">
+                            <img src="./assets/images/php-100.png" alt="Linkedin">
+                            <img src="./assets/images/python-100.png" alt="Linkedin">
+                        </div>
+                    </div>
+                    <div class="frameworks">
+                        <h3>Frameworks</h3>
+                        <div class="containerTechnologies">
+                            <img src="./assets/images/angular-100.png" alt="Linkedin">
+                            <img src="./assets/images/react-100.png" alt="Linkedin">
+                        </div>
+                    </div>
+                    <div class="databases">
+                        <h3>Banco de Dados</h3>
+                        <div class="containerTechnologies">
+                            <img src="./assets/images/mysql-100.png" alt="Linkedin">
+                            <img src="./assets/images/postgresql-100.png" alt="Linkedin">
+                            <img src="./assets/images/mongo-100.png" alt="Linkedin">
+                        </div>
+                    </div>
+                    <div class="others">
+                        <h3>Outros</h3>
+                        <div class="containerTechnologies">
+                            <img src="./assets/images/github-skills-100.png" alt="Linkedin">
+                            <img src="./assets/images/rabbit-100.png" alt="Linkedin">
+                            <img src="./assets/images/html-100.png" alt="Linkedin">
+                            <img src="./assets/images/css-100.png" alt="Linkedin">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -80,8 +147,17 @@
 
             Array.from(addClass).forEach(el => {
                 el.classList.add('selected');
-            })
+            });
 
+            const removeSection = document.getElementsByClassName('show');
+
+            Array.from(removeSection).forEach(el => {
+                el.classList.remove('show');
+            });
+
+            const addsection = document.getElementById(`${menu}Container`);
+
+            addsection.classList.add('show');
         }
 
         openSideMenu = () => {

@@ -65,6 +65,19 @@
     .textContainer p {
         font-size: 21px;
     }
+
+    .frameworks {
+        width: 24%;
+    }
+    .databases {
+        width: 24%;
+    }
+    .languages {
+        width: 24%;
+    }
+    .others {
+        width: 24%;
+    }
 }
 @media only screen and (min-width: 1240px) and (max-width: 1439px) {
     .menu .menuList {
@@ -127,6 +140,23 @@
 
     .textContainer p {
         font-size: 21px;
+    }
+
+    .aboutTextContainer {
+        width: 100%;
+    }
+
+    .frameworks {
+        width: 24%;
+    }
+    .databases {
+        width: 24%;
+    }
+    .languages {
+        width: 24%;
+    }
+    .others {
+        width: 24%;
     }
 }
 @media only screen and (min-width: 1060px) and (max-width: 1239px) {
@@ -191,6 +221,23 @@
     .textContainer p {
         font-size: 21px;
     }
+
+    .aboutTextContainer {
+        width: 100%;
+    }
+
+    .frameworks {
+        width: 24%;
+    }
+    .databases {
+        width: 24%;
+    }
+    .languages {
+        width: 24%;
+    }
+    .others {
+        width: 24%;
+    }
 }
 @media only screen and (min-width: 840px) and (max-width: 1059px){
     .menu .menuList {
@@ -254,6 +301,23 @@
     .textContainer p {
         font-size: 21px;
     }
+
+    .aboutTextContainer {
+        width: 100%;
+    }
+
+    .frameworks {
+        width: 24%;
+    }
+    .databases {
+        width: 24%;
+    }
+    .languages {
+        width: 24%;
+    }
+    .others {
+        width: 24%;
+    }
 }
 @media only screen and (min-width: 640px) and (max-width: 839px) {
     .menu .menuList {
@@ -312,6 +376,23 @@
 
     .textContainer p {
         font-size: 19px;
+    }
+
+    .aboutTextContainer {
+        width: 100%;
+    }
+
+    .frameworks {
+        width: 49%;
+    }
+    .databases {
+        width: 49%;
+    }
+    .languages {
+        width: 49%;
+    }
+    .others {
+        width: 49%;
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 639px) {
@@ -376,6 +457,23 @@
 
     .textContainer p {
         font-size: 14px;
+    }
+
+    .aboutTextContainer {
+        width: 100%;
+    }
+
+    .frameworks {
+        width: 100%;
+    }
+    .databases {
+        width: 100%;
+    }
+    .languages {
+        width: 100%;
+    }
+    .others {
+        width: 100%;
     }
 }
 
@@ -620,11 +718,65 @@ body {
 }
 
 .textContainer p {
-    font-family: ptserife;
+    font-family: ptserif;
     color: white;
 }
 
 .socialIconsContainer {
     text-align: center;
     margin-top: 50px;
+}
+
+section {
+    display: none;
+}
+
+.show {
+    display: block;
+    animation-name: entranceAnimation;
+    animation-duration: 1.5s;
+}
+
+.frameworksContainer {
+    margin-top: 20px;
+}
+
+.frameworks {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.databases {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.languages {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.others {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mainContainer h3 {
+    color: white;
+    text-align: center;
+    font-family: ptserif;
+    font-weight: unset;
+    font-size: 21px;
+}
+
+.containerTechnologies {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.containerTechnologies img {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
 }
