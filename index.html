@@ -13,11 +13,11 @@
                 <div class="menu" id="menu">
                     <button class="sideMenuButton" onclick="openSideMenu()"><img src="./assets/images/side-menu.png"></button>
                     <ul class="menuList">
-                        <li><a href="/" class="selected"> Início </a></li>
-                        <li><a href="/"> Sobre mim </a></li>
-                        <li><a href="/"> Habilidades </a></li>
-                        <li><a href="/"> Projetos </a></li>
-                        <li><a href="/"> Contato </a></li>
+                        <li><a class="selected initial" onclick="onClickMenu('initial')"> Início </a></li>
+                        <li><a class="about" onclick="onClickMenu('about')"> Sobre mim </a></li>
+                        <li><a class="skills" onclick="onClickMenu('skills')"> Habilidades </a></li>
+                        <li><a class="projects" onclick="onClickMenu('projects')"> Projetos </a></li>
+                        <li><a class="contact" onclick="onClickMenu('contact')"> Contato </a></li>
                     </ul>
                 </div>
 
@@ -30,30 +30,70 @@
             <div class="bannerLeft" id="bannerLeft">
                 <button class="closeButton" onclick="closeSideMenu()"><img src="./assets/images/close.png"></button>
                 <ul class="bannerLeftMenu">
-                    <li><a href="/" class="selected"> Início </a></li>
-                    <li><a href="/"> Sobre mim </a></li>
-                    <li><a href="/"> Habilidades </a></li>
-                    <li><a href="/"> Projetos </a></li>
-                    <li><a href="/"> Contato </a></li>
+                    <li><a class="selected inital" onclick="onClickMenu('initial')"> Início </a></li>
+                    <li><a class="about" onclick="onClickMenu('about')"> Sobre mim </a></li>
+                    <li><a class="skills" onclick="onClickMenu('skills')"> Habilidades </a></li>
+                    <li><a class="projects" onclick="onClickMenu('projects')"> Projetos </a></li>
+                    <li><a class="contact" onclick="onClickMenu('contact')"> Contato </a></li>
                 </ul>
                 <div class="socialIcons">
-                    <img src="./assets/images/linkedin.png" alt="Linkedin">
-                    <img src="./assets/images/github.png" alt="github">
-                    <img src="./assets/images/facebook.png" alt="facebook">
+                    <img src="./assets/images/linkedin-35.png" alt="Linkedin">
+                    <img src="./assets/images/github-35.png" alt="github">
+                    <img src="./assets/images/facebook-35.png" alt="facebook">
                 </div>
             </div>
         </header>
+
+        <section>
+            <div class="mainContainer">
+                <div class="titleContainer">
+                    <h1>Wellington Thalyson</h1>
+                    <h2>Desenvolvedor back-end e front-end</h2>
+                </div>
+                <div class="mainImageContainer">
+                    <img src="./assets/images/anime.jpg" alt="Wellington">
+                </div>
+                <div class="textContainer">
+                    <p>- Bacharel em Sistemas de Informação pela Universidade do Vale do Sapucaí.</p>
+                    <p>- Atuei com desenvolvimento web pela INATEL.</p>
+                    <p>- Atuei com desenvolvimento web pelo IF - Sul de Minas.</p>
+                    <p>- Atuei com desenvolvimento web e mobile para outros cursos da instituição.</p>
+                </div>
+                <div class="socialIconsContainer">
+                    <img src="./assets/images/linkedin-100.png" alt="Linkedin">
+                    <img src="./assets/images/github-100.png" alt="github">
+                    <img src="./assets/images/facebook-100.png" alt="facebook">
+                </div>
+            </div>
+        </section>
     </body>
 
     <script>
+        onClickMenu = (menu) => {
+            const removeClass = document.getElementsByClassName('selected');
+
+            Array.from(removeClass).forEach(el => {
+                el.classList.remove('selected');
+            });
+
+            const addClass = document.getElementsByClassName(menu);
+
+            Array.from(addClass).forEach(el => {
+                el.classList.add('selected');
+            })
+
+        }
+
         openSideMenu = () => {
             document.getElementById('menu').classList.add('open');
             document.getElementById('bannerLeft').classList.add('open');
+            document.getElementById('bannerLeft').classList.remove('close');
         }
 
         closeSideMenu = () => {
             document.getElementById('menu').classList.remove('open');
             document.getElementById('bannerLeft').classList.remove('open');
+            document.getElementById('bannerLeft').classList.add('close');
         }
     </script>
 </html>

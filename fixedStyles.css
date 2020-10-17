@@ -20,6 +20,46 @@
         height: 50px;
         width: 50px;
     }
+
+    .mainContainer {
+        width: 90%;
+    }
+
+    .mainImageContainer {
+        width: 50%;
+        float: right;
+    }
+
+    .mainImageContainer img {
+        width: 438px;
+        height: 438px;
+    }
+
+    .socialIconsContainer {
+        width: 50%;
+    }
+
+    .socialIconsContainer img {
+        width: 98px;
+        height: 98px;
+    }
+
+    .socialIconsContainer img:nth-child(2) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .textContainer {
+        width: 50%;
+    }
+
+    .titleContainer h1 {
+        font-size: 55px;
+    }
+
+    .titleContainer h2 {
+        font-size: 35px;
+    }
 }
 @media only screen and (min-width: 1240px) and (max-width: 1439px) {
     .menu .menuList {
@@ -37,6 +77,46 @@
     .userInformation img {
         height: 50px;
         width: 50px;
+    }
+
+    .mainContainer {
+        width: 85%;
+    }
+
+    .mainImageContainer {
+        width: 50%;
+        float: right;
+    }
+
+    .mainImageContainer img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .socialIconsContainer {
+        width: 50%;
+    }
+
+    .socialIconsContainer img {
+        width: 98px;
+        height: 98px;
+    }
+
+    .socialIconsContainer img:nth-child(2) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .textContainer {
+        width: 50%;
+    }
+
+    .titleContainer h1 {
+        font-size: 55px;
+    }
+
+    .titleContainer h2 {
+        font-size: 35px;
     }
 }
 @media only screen and (min-width: 1060px) and (max-width: 1239px) {
@@ -56,6 +136,46 @@
         height: 50px;
         width: 50px;
     }
+
+    .mainContainer {
+        width: 80%;
+    }
+
+    .mainImageContainer {
+        width: 50%;
+        float: right;
+    }
+
+    .mainImageContainer img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .socialIconsContainer {
+        width: 50%;
+    }
+
+    .socialIconsContainer img {
+        width: 98px;
+        height: 98px;
+    }
+
+    .socialIconsContainer img:nth-child(2) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .textContainer {
+        width: 50%;
+    }
+
+    .titleContainer h1 {
+        font-size: 55px;
+    }
+
+    .titleContainer h2 {
+        font-size: 35px;
+    }
 }
 @media only screen and (min-width: 840px) and (max-width: 1059px){
     .menu .menuList {
@@ -73,6 +193,46 @@
     .userInformation img {
         height: 50px;
         width: 50px;
+    }
+
+    .mainContainer {
+        width: 75%;
+    }
+
+    .mainImageContainer {
+        width: 50%;
+        float: right;
+    }
+
+    .mainImageContainer img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .socialIconsContainer {
+        width: 50%;
+    }
+
+    .socialIconsContainer img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .socialIconsContainer img:nth-child(2) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .textContainer {
+        width: 50%;
+    }
+
+    .titleContainer h1 {
+        font-size: 55px;
+    }
+
+    .titleContainer h2 {
+        font-size: 35px;
     }
 }
 @media only screen and (min-width: 640px) and (max-width: 839px) {
@@ -92,6 +252,42 @@
         height: 50px;
         width: 50px;
     }
+
+    .mainContainer {
+        width: 70%;
+    }
+
+    .mainImageContainer {
+        width: 100%;
+    }
+
+    .mainImageContainer img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .socialIconsContainer {
+        width: 100%;
+    }
+
+    .socialIconsContainer img {
+        width: 98px;
+        height: 98px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .titleContainer h1 {
+        font-size: 50px;
+    }
+
+    .titleContainer h2 {
+        font-size: 30px;
+    }
 }
 @media only screen and (min-width: 0px) and (max-width: 639px) {
     .menu .menuList {
@@ -109,6 +305,47 @@
     .userInformation img {
         height: 45px;
         width: 45px;
+    }
+
+    .mainContainer {
+        width: 65%;
+    }
+
+    .mainImageContainer {
+        width: 100%;
+    }
+
+    .mainImageContainer img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .socialIconsContainer {
+        width: 100%;
+    }
+
+    .socialIconsContainer img {
+        width: 98px;
+        height: 98px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .titleContainer {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .titleContainer h1 {
+        font-size: 27px;
+    }
+
+    .titleContainer h2 {
+        font-size: 16px;
     }
 }
 
@@ -160,8 +397,6 @@ body {
 .bannerLeft {
     height: 100vh;
     width: 60px;
-    animation-name: closeSideMenu;
-    animation-duration: 1s;
     position: absolute;
     background-image: linear-gradient(rgba(54, 64, 152, 0.73), rgba(27, 33, 87, 0.75));
 }
@@ -193,13 +428,12 @@ body {
 }
 
 .menu li a:hover {
-    text-decoration: underline;
-    text-underline-position: under;
+    color: rgb(216, 214, 214);
+    cursor: pointer;
 }
 
 .menu li a.selected {
     text-decoration: underline;
-    text-underline-position: under;
 }
 
 .menu .sideMenuButton {
@@ -239,6 +473,11 @@ body {
     animation-name: openSideMenu;
     animation-duration: 1s;
     width: 240px;
+}
+
+.bannerLeft.close {
+    animation-name: closeSideMenu;
+    animation-duration: 1s;
 }
 
 .closeButton {
@@ -313,4 +552,48 @@ body {
 .bannerLeft .socialIcons img {
     margin-top: 25px;
     text-align: center;
+}
+
+/* CENTER CONTAINER */
+.mainContainer {
+    position: absolute;
+    top: 260px;
+    left: 90px;
+}
+
+.titleContainer h1 {
+    font-family: ptserif;
+    color: white;
+    font-weight: unset;
+    margin: 0;
+}
+
+.titleContainer h2 {
+    font-family: ptserif;
+    color: #122A7E;
+    margin: 0;
+    font-weight: unset;
+}
+
+.mainImageContainer {
+    text-align: center;
+}
+
+.mainImageContainer img {
+    border-radius: 250px;
+}
+
+.textContainer {
+    margin-top: 30px;
+}
+
+.textContainer p {
+    font-family: ptserife;
+    font-size: 21px;
+    color: white;
+}
+
+.socialIconsContainer {
+    text-align: center;
+    margin-top: 50px;
 }
