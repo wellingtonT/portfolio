@@ -23,6 +23,7 @@
 
     .mainContainer {
         width: 90%;
+        top: 260px;
     }
 
     .mainImageContainer {
@@ -85,6 +86,7 @@
 
     .mainContainer {
         width: 85%;
+        top: 230px;
     }
 
     .mainImageContainer {
@@ -147,6 +149,7 @@
 
     .mainContainer {
         width: 80%;
+        top: 230px;
     }
 
     .mainImageContainer {
@@ -209,6 +212,7 @@
 
     .mainContainer {
         width: 75%;
+        top: 260px;
     }
 
     .mainImageContainer {
@@ -271,6 +275,7 @@
 
     .mainContainer {
         width: 70%;
+        top: 150px;
     }
 
     .mainImageContainer {
@@ -329,6 +334,7 @@
 
     .mainContainer {
         width: 70%;
+        top: 150px;
     }
 
     .mainImageContainer {
@@ -582,9 +588,8 @@ body {
 /* CENTER CONTAINER */
 .mainContainer {
     position: absolute;
-    top: 260px;
     left: 90px;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 69vh;
 }
 
