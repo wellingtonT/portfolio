@@ -60,6 +60,10 @@
     .titleContainer h2 {
         font-size: 35px;
     }
+
+    .textContainer p {
+        font-size: 21px;
+    }
 }
 @media only screen and (min-width: 1240px) and (max-width: 1439px) {
     .menu .menuList {
@@ -117,6 +121,10 @@
 
     .titleContainer h2 {
         font-size: 35px;
+    }
+
+    .textContainer p {
+        font-size: 21px;
     }
 }
 @media only screen and (min-width: 1060px) and (max-width: 1239px) {
@@ -176,6 +184,10 @@
     .titleContainer h2 {
         font-size: 35px;
     }
+
+    .textContainer p {
+        font-size: 21px;
+    }
 }
 @media only screen and (min-width: 840px) and (max-width: 1059px){
     .menu .menuList {
@@ -234,6 +246,10 @@
     .titleContainer h2 {
         font-size: 35px;
     }
+
+    .textContainer p {
+        font-size: 21px;
+    }
 }
 @media only screen and (min-width: 640px) and (max-width: 839px) {
     .menu .menuList {
@@ -288,6 +304,10 @@
     .titleContainer h2 {
         font-size: 30px;
     }
+
+    .textContainer p {
+        font-size: 19px;
+    }
 }
 @media only screen and (min-width: 0px) and (max-width: 639px) {
     .menu .menuList {
@@ -316,8 +336,8 @@
     }
 
     .mainImageContainer img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     .socialIconsContainer {
@@ -346,6 +366,10 @@
 
     .titleContainer h2 {
         font-size: 16px;
+    }
+
+    .textContainer p {
+        font-size: 14px;
     }
 }
 
@@ -589,7 +613,6 @@ body {
 
 .textContainer p {
     font-family: ptserife;
-    font-size: 21px;
     color: white;
 }
 
